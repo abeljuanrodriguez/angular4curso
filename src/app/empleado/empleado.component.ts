@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './empleado.component.html',
 })
 export class FrutaComponent {
-  public nombreEmpleado = "Joselin";
+  public nombreEmpleado = "Joselin Rizosin";
 }
