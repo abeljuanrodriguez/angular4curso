@@ -1,0 +1,21 @@
+<h3 class="titulo">{{titulo}}</h3>
+<div *ngIf="mostrarTrabajador===true">
+    <ul>
+        <li>{{trabajadores[0].nombre}}</li>
+        <li>{{trabajadores[0].edad}}</li>
+        <li>{{trabajadores[0].cargo}}</li>
+        <li *ngIf="trabajadores[0].contratado===true">Es contratado</li>
+        <li *ngIf="trabajadores[0].contratado===false">No está contratado</li>
+    </ul>
+    <button (click)='cambiarEmpleado(false)'>Siguiente</button>
+</div>
+<div *ngIf="mostrarTrabajador===false">
+    <ul>
+        <li>{{trabajadores[1].nombre}}</li>
+        <li>{{trabajadores[1].edad}}</li>
+        <li>{{trabajadores[1].cargo}}</li>
+        <li *ngIf="trabajadores[1].contratado===true">Es contratado</li>
+        <li *ngIf="trabajadores[1].contratado===false">No está contratado</li>
+    </ul>
+    <button (click)='cambiarEmpleado(true)'>Anterior</button>
+</div>

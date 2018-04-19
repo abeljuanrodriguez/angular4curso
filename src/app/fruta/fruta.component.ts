@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './fruta.component.html',
 })
 export class FrutaComponent {
-  public nombreComponente = 'Componente de fruta';
+  public nombreComponente = 'Frutas en oferta';
   public listadoFrutas = 'Naranja, Manzana, Pera y Sandia';
 }
